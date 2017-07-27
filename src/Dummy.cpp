@@ -1,10 +1,7 @@
 #include "Dummy.hpp"
 #include <iostream>
 
-using namespace std;
-using namespace var_ROCK_PUBLIC_CXX_STANDARD;
+#if __cplusplus!=201103L
+#error "no compiling under C++11"
+#endif
 
-void DummyClass::welcome()
-{
-    cout << "You successfully compiled and executed DummyProject. Welcome!" << endl;
-}
